@@ -1,6 +1,6 @@
 project(
-  'arc-theme',
-  version : '20221218',
+  'arc-theme-mono',
+  version : 'idk',
   meson_version: '>= 0.53.0',
   license : 'GPL3',
   default_options : [
@@ -11,20 +11,14 @@ project(
 fs = import('fs')
 
 variant_name = {
-  'light' : (get_option('transparency') ? 'Arc' : 'Arc-solid'),
-  'darker' : (get_option('transparency') ? 'Arc-Darker' : 'Arc-Darker-solid'),
-  'dark' : (get_option('transparency') ? 'Arc-Dark' : 'Arc-Dark-solid'),
-  'lighter' : (get_option('transparency') ? 'Arc-Lighter' : 'Arc-Lighter-solid'),
+  'mono' : 'Arc-Mono',
 }
 
 prefix = get_option('prefix')
 datadir = get_option('datadir')
 
 install_dir = {
-  'light' : datadir / 'themes' / variant_name.get('light'),
-  'darker' : datadir / 'themes' / variant_name.get('darker'),
-  'dark' : datadir / 'themes' / variant_name.get('dark'),
-  'lighter' : datadir / 'themes' / variant_name.get('lighter'),
+  'mono' : datadir / 'themes' / variant_name.get('mono'),
 }
 
 # sassc dependency

@@ -8,14 +8,14 @@ option(
 option(
   'variants',
   type: 'array',
-  choices: ['light', 'darker', 'dark', 'lighter'],
+  choices: ['mono'],
   description: 'List of theme variants to build',
 )
 
 option(
   'transparency',
   type: 'boolean',
-  value: true,
+  value: false,
   description: 'Enable or disable transparency',
 )
 
