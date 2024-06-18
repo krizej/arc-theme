@@ -11,14 +11,14 @@ project(
 fs = import('fs')
 
 variant_name = {
-  'mono' : 'Arc-Mono',
+  'dark' : 'Arc-Mono',
 }
 
 prefix = get_option('prefix')
 datadir = get_option('datadir')
 
 install_dir = {
-  'mono' : datadir / 'themes' / variant_name.get('mono'),
+  'dark' : datadir / 'themes' / variant_name.get('dark'),
 }
 
 # sassc dependency

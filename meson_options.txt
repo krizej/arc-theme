@@ -8,7 +8,7 @@ option(
 option(
   'variants',
   type: 'array',
-  choices: ['mono'],
+  choices: ['dark'],
   description: 'List of theme variants to build',
 )
 
